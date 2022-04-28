@@ -29,7 +29,7 @@ menuItems.forEach(item => {
     counter++;
 
     const el = document.createElement('p');
-    el.textContent = "FOOD DESCRIPTION PLACEHOLDER Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ab magni.";
+    el.textContent = "*Food Description Placeholder* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ab magni.";
     el.classList.add('menu-item-desc');
     item.appendChild(el);
 }); 
@@ -37,17 +37,21 @@ menuItems.forEach(item => {
 
 
 
-
+const hc = document.querySelector('#header-contents');
 const hc2 = document.querySelector('#header-contents-2');
 const nav2 = document.querySelector('#nav-2');
 
 window.onscroll = () => {
-    let scrollLimit = 40;
+    let scrollLimit = 0;
     if (window.pageYOffset > scrollLimit) {
+        hc.style.opacity = 0;
+
         hc2.classList.add('display-mode-flex');
         nav2.classList.add('display-mode-flex');
     }
     else {
+        hc.style.opacity = 1;
+
         hc2.classList.remove('display-mode-flex');
         nav2.classList.remove('display-mode-flex');
     }
