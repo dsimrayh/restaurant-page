@@ -49,6 +49,10 @@ body {
     
 }
 
+.home-header {
+    height: 100vh !important;
+}
+
 #header-contents {
     display: flex;
     justify-content: space-between;
@@ -56,6 +60,27 @@ body {
     color: #fff;
     padding-bottom: 20px;
     background: linear-gradient(rgb(97, 217, 253), rgba(255, 255, 255, 0));
+}
+
+#home-contents {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 10%;
+    background: none;
+
+    align-self: center;
+
+    display: grid;
+    place-items: center;
+    
+}
+
+#logo {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 255, 221, 0.507);
+    transform: rotateY(180deg);
 }
 
 
@@ -279,6 +304,10 @@ strong {
     background-color: #eee;
 }
 
+#private-event-btn:hover {
+    transform: scale(1.05);
+}
+
 
 
 #contact-form {
@@ -329,6 +358,10 @@ textarea {
 #form-submit:active {
     transform: scale(0.97);
     background-color: #eee;
+}
+
+#form-submit:hover {
+    transform: scale(1.05);
 }
 
 
