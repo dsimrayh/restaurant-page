@@ -38,7 +38,7 @@ body {
 #header {
     width: 100vw;
     height: 55vh;
-    background-image: url('./background.jpg');
+    background-image: url('./images/background.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position-y: bottom;
