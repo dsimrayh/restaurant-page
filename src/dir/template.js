@@ -1,3 +1,6 @@
+// Creates the base elements that are uniform across the site
+// header, main, footer --> appends to #content
+
 import headerContents from './components/headerContents';
 import mainContents from './components/mainContents';
 import footerContents from './components/footerContents';
@@ -7,7 +10,7 @@ export default function template() {
     
     const header = document.createElement('header');
     header.id = 'header';
-    // HOME HEADER
+    // HOME HEADER 
     header.classList.add('home-header');
     header.appendChild(headerContents());
     
