@@ -2,11 +2,11 @@
 
 import navBuilder from "../tools/navBuilder";
 
-export default function nav() {
+export default function nav(id) {
 
     const ul = document.createElement('ul');
     ul.classList.add('user-select');
-    ul.id = 'nav';
+    ul.id = id;
 
     const home = navBuilder('home');
     const menu = navBuilder('menu');

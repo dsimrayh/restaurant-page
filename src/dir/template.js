@@ -2,6 +2,7 @@
 // header, main, footer --> appends to #content
 
 import headerContents from './components/headerContents';
+import headerContents2 from './components/headerContents2';
 import mainContents from './components/mainContents';
 import footerContents from './components/footerContents';
 
@@ -10,9 +11,9 @@ export default function template() {
     
     const header = document.createElement('header');
     header.id = 'header';
-    // HOME HEADER 
-    header.classList.add('home-header');
     header.appendChild(headerContents());
+    header.appendChild(headerContents2());
+    // <display-header>
     
 
     const main = document.createElement('main');

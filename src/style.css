@@ -73,7 +73,6 @@ body {
 
     margin-bottom: 10%;
 
-    
 }
 
 #logo {
@@ -82,6 +81,7 @@ body {
     border-radius: 50%;
     border: 5px solid rgba(0, 255, 221, 0.507);
     transform: rotateY(180deg);
+    margin-bottom: 1em;
 }
 
 .home-text {

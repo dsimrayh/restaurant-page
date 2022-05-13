@@ -11,8 +11,9 @@ export default function headerContents() {
     restaurantName.classList.add('user-select');
     restaurantName.textContent = 'Dorado Grill';
 
-    const navbar = nav();
-    
+    const navbar = nav('nav');
+
+
     contents.appendChild(restaurantName);
     contents.appendChild(navbar);
 
