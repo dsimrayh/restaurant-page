@@ -1,7 +1,3 @@
 node_modules
 notes.txt
-dist/about.html
-dist/contact.html
-dist/home.html
-dist/info.html
-dist/menu.html
+HTML_page_templates
