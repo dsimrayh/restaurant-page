@@ -1,8 +1,6 @@
-import resetHeader from '../tools/resetHeader';
 import menuBuilder from '../tools/menuBuilder';
 
 export default function Menu() {
-    resetHeader('grid');
 
     menuBuilder();
 

@@ -169,6 +169,10 @@ a {
     text-decoration: none;
 }
 
+a:active {
+    color: #fff;
+}
+
 a:visited {
     color: #fff;
 }

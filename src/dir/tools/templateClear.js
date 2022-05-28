@@ -1,3 +1,9 @@
+// Used to remove everything from template upon page switch
+
 export default function templateClear() {
-    return 0;
+    const content = document.querySelector('#content');
+
+    while(content.lastChild) {
+        content.removeChild(content.lastChild);
+    }
 }
