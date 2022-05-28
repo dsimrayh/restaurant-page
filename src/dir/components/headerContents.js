@@ -13,7 +13,6 @@ export default function headerContents() {
 
     const navbar = nav('nav');
 
-
     contents.appendChild(restaurantName);
     contents.appendChild(navbar);
 

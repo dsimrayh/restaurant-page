@@ -3,6 +3,7 @@
 
 import headerContents from './components/headerContents';
 import headerContents2 from './components/headerContents2';
+import displayHeader from './components/displayHeader';
 import mainContents from './components/mainContents';
 import footerContents from './components/footerContents';
 
@@ -13,7 +14,7 @@ export default function template() {
     header.id = 'header';
     header.appendChild(headerContents());
     header.appendChild(headerContents2());
-    // <display-header>
+    header.appendChild(displayHeader());
     
 
     const main = document.createElement('main');

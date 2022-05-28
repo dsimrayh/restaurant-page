@@ -8,9 +8,14 @@ export default function Home() {
     const header = document.querySelector('#header');
     header.classList.add('home-header'); 
 
+    // Hide page title (text at bottom of header)
+    const displayHeader = document.querySelector('#display-header');
+    displayHeader.style.display = 'none';
+
 
     const homeContents = document.createElement('div');
     homeContents.id = 'home-contents';
+    homeContents.style.display = 'grid';
 
     const logo = document.createElement('img');
     logo.id = 'logo';
@@ -37,5 +42,5 @@ export default function Home() {
     homeContents.appendChild(homeHeader);
     homeContents.appendChild(homeDescription);
 
-    return homeContents;
+    header.appendChild(homeContents);;
 }

@@ -6,6 +6,8 @@ export default function navBuilder(linkName) {
     a.textContent = linkName;
     a.href = '#';
 
+    a.dataset.pageName = linkName.toLowerCase();
+
     li.appendChild(a);
 
     return li;

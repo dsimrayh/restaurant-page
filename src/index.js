@@ -1,15 +1,29 @@
 // Module imports
 import template from './dir/template';
 import Home from './dir/modules/Home';
+import Menu from './dir/modules/Menu';
 
 // Loads basic website template
 template();
 
 // Default to home page
 window.onload = () => {
-    const header = document.querySelector('#header');
-    header.appendChild(Home());
+    Home();
 }
+
+document.addEventListener('click', (e) => {
+    const pageName = e.target.dataset.pageName;
+    if(pageName) {
+        switch(pageName) {
+            case 'home':
+                Home();
+            case 'menu':
+                Menu();
+            default:
+                break;
+        }
+    }
+})
 
 
 // FOR HEADER SCROLL FUNCTIONALITY
