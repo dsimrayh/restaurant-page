@@ -4,12 +4,12 @@ import menuCatBuilder from '../tools/menuCatBuilder';
 export default function menuBuilder() {
     const displayInfo = document.querySelector('#display-info');
 
-    displayInfo.appendChild(menuCatBuilder('appetizers'));
+    displayInfo.appendChild(menuCatBuilder('APPETIZERS'));
     displayInfo.appendChild(menuItemBuilder());
     displayInfo.appendChild(menuItemBuilder());
     displayInfo.appendChild(menuItemBuilder());
     displayInfo.appendChild(menuItemBuilder());;
-    displayInfo.appendChild(menuCatBuilder('entrees'));
+    displayInfo.appendChild(menuCatBuilder('ENTREES'));
     displayInfo.appendChild(menuItemBuilder());
     displayInfo.appendChild(menuItemBuilder());
     displayInfo.appendChild(menuItemBuilder());
@@ -18,10 +18,10 @@ export default function menuBuilder() {
     displayInfo.appendChild(menuItemBuilder());
     displayInfo.appendChild(menuItemBuilder());
     displayInfo.appendChild(menuItemBuilder());
-    displayInfo.appendChild(menuCatBuilder('desserts'));
+    displayInfo.appendChild(menuCatBuilder('DESSERTS'));
     displayInfo.appendChild(menuItemBuilder());
     displayInfo.appendChild(menuItemBuilder());
-    displayInfo.appendChild(menuCatBuilder('drinks'));
+    displayInfo.appendChild(menuCatBuilder('DRINKS'));
     displayInfo.appendChild(menuItemBuilder());
     displayInfo.appendChild(menuItemBuilder());
 }

@@ -2,6 +2,12 @@ import menuBuilder from '../tools/menuBuilder';
 
 export default function Menu() {
 
+    const displayHeader = document.querySelector('#display-header');
+    displayHeader.textContent = 'MENU';
+
+    const displayInfo = document.querySelector('#display-info');
+    displayInfo.id = 'display-info';
+
     menuBuilder();
 
     const foodList = {
