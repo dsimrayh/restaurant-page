@@ -19,7 +19,6 @@ window.onload = () => {
 
 // Page switching functionality 
 document.addEventListener('click', (e) => {
-    debugger;
     const pageName = e.target.dataset.pageName;
     if(pageName) {
 
