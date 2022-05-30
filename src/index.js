@@ -5,6 +5,7 @@ import scrollTool from './dir/tools/scrollTool';
 import Home from './dir/modules/Home';
 import Menu from './dir/modules/Menu';
 import Info from './dir/modules/Info';
+import About from './dir/modules/About';
 
 
 // Loads basic website template
@@ -35,6 +36,9 @@ document.addEventListener('click', (e) => {
                 break;
             case 'info':
                 Info();
+                break;
+            case 'about':
+                About();
                 break;
             default:
                 break;
