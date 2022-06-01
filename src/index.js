@@ -6,6 +6,7 @@ import Home from './dir/modules/Home';
 import Menu from './dir/modules/Menu';
 import Info from './dir/modules/Info';
 import About from './dir/modules/About';
+import Contact from './dir/modules/Contact';
 
 
 // Loads basic website template
@@ -39,9 +40,12 @@ document.addEventListener('click', (e) => {
             case 'about':
                 About();
                 break;
+            case 'contact':
+                Contact();
+                break;
             default:
                 break;
         }
     }
-})
+});
 
