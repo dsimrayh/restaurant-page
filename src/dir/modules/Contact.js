@@ -10,7 +10,7 @@ export default function Contact() {
     displayInfo.id = 'display-info-2';
 
     const displayHeader = document.querySelector('#display-header');
-    displayHeader.textContent = 'ABOUT';
+    displayHeader.textContent = 'CONTACT';
 
     // Build
     displayInfo.appendChild(menuCatBuilder('how to reach us'));
